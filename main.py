@@ -32,8 +32,8 @@ def load_data(n=100000):
     
     # Try to load from Excel file if exists, otherwise create sample data
     try:
-        if os.path.exists("data/sales_data.xlsx"):
-            df = pd.read_excel("data/sales_data.xlsx")
+        if os.path.exists("sales_data.xlsx"):
+            df = pd.read_excel("sales_data.xlsx")
             # Ensure all required columns exist
             required_columns = ['Date', 'Order no', 'Customer Name', 'Executive Name', 'Area code', 
                               'Opening balance', 'Sales Value', 'Sales return', 'Sales transfer', 
@@ -2188,4 +2188,5 @@ st.markdown(
     </div>
     """,
     unsafe_allow_html=True
+
 )
